@@ -18,7 +18,6 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        //System.out.println(args.length);
         if (args.length != 3) {
             System.out.println("Usage: java -jar Calculator.jar <operand1> <operator> <operand2>");
             System.exit(1);
@@ -32,9 +31,9 @@ public class Calculator {
             double result = calculate(operand1, operator, operand2);
             System.out.println("Result: " + result);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter valid numeric values.");
+            System.err.println("Invalid input. Please enter valid numeric values.");
         } catch (ArithmeticException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.err.println("Error: " + e.getMessage());
         }
     }
 }
