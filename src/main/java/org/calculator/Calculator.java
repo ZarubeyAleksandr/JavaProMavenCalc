@@ -16,6 +16,7 @@ public class Calculator {
             default -> throw new IllegalArgumentException("Invalid operator. Supported operators are +, -, x, /.");
         };
     }
+
     public static void main(String[] args) {
         //System.out.println(args.length);
         if (args.length != 3) {
