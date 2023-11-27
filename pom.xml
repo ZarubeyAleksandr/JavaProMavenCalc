@@ -33,7 +33,7 @@
                     <archive>
                         <manifest>
                             <mainClass>
-                                org.example.Calculator
+                                org.calculator.Calculator
                             </mainClass>
                         </manifest>
                     </archive>
